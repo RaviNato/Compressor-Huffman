@@ -1,6 +1,6 @@
 #ifndef CODIGO
 #define CODIGO
-#include "meustiposonlinegdb.h"
+#include "meustipos.h"
 
 typedef struct
 {
@@ -18,8 +18,11 @@ boolean joga_fora_bit (Codigo* c /* por referência */);
 boolean pega_byte (Codigo c /* por valor "*/,
                    U8 qual /* por valor */,
                    U8* b /*por referencia */);
-
-char* toString (Codigo c /* por valor*/);
+boolean pega_bit(Codigo c /* por valor "*/,
+                 U32 qual_bit /* por valor "*/,
+                 U8* bit /*por referencia */);
+I8* toString (Codigo c /* por valor*/);
 boolean clone (Codigo original, /* por valor */
                Codigo* copia /* por referencia */);
+
 #endif
